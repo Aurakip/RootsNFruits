@@ -23,7 +23,8 @@ public class RFRecipeProvider extends FabricRecipeProvider {
             public void buildRecipes() {
                 shapeless(RecipeCategory.BUILDING_BLOCKS, RFBlocks.SOUL_ROOTS)
                         .requires(Blocks.SOUL_SOIL)
-                        .requires(Blocks.MANGROVE_ROOTS).unlockedBy(getHasName(Blocks.SOUL_SOIL), has(Blocks.SOUL_SOIL)).save(output);
+                        .requires(Blocks.MANGROVE_ROOTS)
+                        .unlockedBy(getHasName(Blocks.MANGROVE_ROOTS), has(Blocks.MANGROVE_ROOTS)).save(output);
             }
         };
     }

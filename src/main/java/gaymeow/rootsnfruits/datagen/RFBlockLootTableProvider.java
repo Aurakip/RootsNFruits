@@ -15,5 +15,6 @@ public class RFBlockLootTableProvider extends FabricBlockLootSubProvider {
     @Override
     public void generate() {
         dropSelf(RFBlocks.SOUL_ROOTS);
+        dropSelf(RFBlocks.SOUL_FUNGUS);
     }
 }

@@ -8,7 +8,6 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 
 public class RFCreativeModeTab {
     public static final CreativeModeTab RootsFruitsTab = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, RootsFruits.id("rootsnfruitstab"),
@@ -17,6 +16,7 @@ public class RFCreativeModeTab {
                     .title(Component.translatable("creativemodetab.rootsnfruits.rootsnfruitstab"))
                     .displayItems((parameters, output) -> {
                         output.accept(RFBlocks.SOUL_ROOTS);
+                        output.accept(RFBlocks.SOUL_FUNGUS);
                     })
                     .build());
 

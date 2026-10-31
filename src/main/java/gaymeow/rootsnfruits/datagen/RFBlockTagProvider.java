@@ -1,6 +1,7 @@
 package gaymeow.rootsnfruits.datagen;
 
 import gaymeow.rootsnfruits.block.RFBlocks;
+import gaymeow.rootsnfruits.tags.RFTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
 import net.minecraft.core.HolderLookup;
@@ -23,5 +24,11 @@ public class RFBlockTagProvider extends FabricTagsProvider.BlockTagsProvider {
 
         valueLookupBuilder(BlockTags.SOUL_SPEED_BLOCKS)
                 .add(RFBlocks.SOUL_ROOTS);
+
+        valueLookupBuilder(BlockTags.SUPPORTS_WARPED_FUNGUS);
+
+        valueLookupBuilder(RFTags.Blocks.SUPPORTS_SOUL_FUNGUS)
+                .addTag(BlockTags.SUPPORTS_WARPED_FUNGUS)
+                .addTag(BlockTags.SOUL_SPEED_BLOCKS);
     }
 }

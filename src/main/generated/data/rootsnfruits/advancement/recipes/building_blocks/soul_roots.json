@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_soul_soil": {
+    "has_mangrove_roots": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:soul_soil"
+            "items": "minecraft:mangrove_roots"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_soul_soil"
+      "has_mangrove_roots"
     ]
   ],
   "rewards": {

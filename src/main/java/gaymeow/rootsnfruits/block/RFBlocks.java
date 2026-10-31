@@ -1,23 +1,32 @@
 package gaymeow.rootsnfruits.block;
 
 import gaymeow.rootsnfruits.RootsFruits;
+import gaymeow.rootsnfruits.tags.RFTags;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.data.worldgen.features.TreeFeatures;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.NetherFungusBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 
 import java.util.function.Function;
+
 
 public class RFBlocks {
 
     public static final Block SOUL_ROOTS = registerBlock("soul_roots",
             properties -> new Block(properties.strength(0.5f).mapColor(MapColor.COLOR_BROWN).sound(SoundType.SOUL_SOIL)));
+    public static final Block SOUL_FUNGUS = registerBlock("soul_fungus",
+            properties -> new NetherFungusBlock(TreeFeatures.OAK, Blocks.SOUL_SOIL, RFTags.Blocks.SUPPORTS_SOUL_FUNGUS,
+                    properties.mapColor(MapColor.COLOR_LIGHT_BLUE).instabreak().noCollision().sound(SoundType.FUNGUS).pushReaction(PushReaction.DESTROY).lightLevel(state->7)));
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function){
         Block toRegister = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.
