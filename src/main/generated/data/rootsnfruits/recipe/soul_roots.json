@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "minecraft:soul_soil",
+    "minecraft:mangrove_roots"
+  ],
+  "result": {
+    "id": "rootsnfruits:soul_roots"
+  }
+}
