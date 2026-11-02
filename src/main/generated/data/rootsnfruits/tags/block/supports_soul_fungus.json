@@ -1,6 +1,6 @@
 {
   "values": [
     "#minecraft:supports_warped_fungus",
-    "rootsnfruits:soul_roots"
+    "#rootsnfruits:soul_golem_can_spawn_fungus_on"
   ]
 }

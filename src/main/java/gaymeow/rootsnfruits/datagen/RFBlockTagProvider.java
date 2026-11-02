@@ -25,10 +25,19 @@ public class RFBlockTagProvider extends FabricTagsProvider.BlockTagsProvider {
         valueLookupBuilder(BlockTags.SOUL_SPEED_BLOCKS)
                 .add(RFBlocks.SOUL_ROOTS);
 
+        valueLookupBuilder(RFTags.Blocks.SOUL_GOLEM_CAN_SPAWN_FUNGUS_ON)
+                .addTag(BlockTags.SOUL_SPEED_BLOCKS);
+
         valueLookupBuilder(BlockTags.SUPPORTS_WARPED_FUNGUS);
 
         valueLookupBuilder(RFTags.Blocks.SUPPORTS_SOUL_FUNGUS)
                 .addTag(BlockTags.SUPPORTS_WARPED_FUNGUS)
-                .addTag(BlockTags.SOUL_SPEED_BLOCKS);
+                .addTag(RFTags.Blocks.SOUL_GOLEM_CAN_SPAWN_FUNGUS_ON);
+
+        valueLookupBuilder(BlockTags.ENDERMAN_HOLDABLE)
+                .add(RFBlocks.SOUL_FUNGUS);
+
+        valueLookupBuilder(BlockTags.FLOWER_POTS)
+                .add(RFBlocks.POTTED_SOUL_FUNGUS);
     }
 }

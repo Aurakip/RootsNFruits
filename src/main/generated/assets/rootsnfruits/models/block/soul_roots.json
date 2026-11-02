@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "rootsnfruits:block/soul_roots_top",
+    "side": "rootsnfruits:block/soul_roots"
+  }
+}
