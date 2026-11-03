@@ -3,6 +3,7 @@ package gaymeow.rootsnfruits;
 import gaymeow.rootsnfruits.block.RFBlocks;
 import gaymeow.rootsnfruits.creativemodetab.RFCreativeModeTab;
 import gaymeow.rootsnfruits.item.RFItems;
+import gaymeow.rootsnfruits.registry.RFCompost;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
@@ -23,8 +24,9 @@ public class RootsFruits implements ModInitializer {
 		RFBlocks.registerAllBlocks();
 		RFItems.registerAllItems();
 		RFCreativeModeTab.registerTabs();
+		RFCompost.registerCompost();
 
-		LOGGER.info("The roots grow");
+		LOGGER.info("The roots grow...");
 	}
 
 

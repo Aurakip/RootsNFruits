@@ -16,6 +16,7 @@ public class RFModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockModelGenerators blockModelGenerators) {
         blockModelGenerators.createTrivialBlock(RFBlocks.SOUL_ROOTS, TexturedModel.COLUMN_ALT);
         blockModelGenerators.createPlantWithDefaultItem(RFBlocks.SOUL_FUNGUS,RFBlocks.POTTED_SOUL_FUNGUS, BlockModelGenerators.PlantType.NOT_TINTED);
+        blockModelGenerators.createTrivialCube(RFBlocks.SOUL_WART_BLOCK);
     }
 
     @Override

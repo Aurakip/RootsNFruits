@@ -23,9 +23,13 @@ public class RFBlocks {
             properties -> new Block(properties.strength(0.5f).mapColor(MapColor.COLOR_BROWN).sound(SoundType.SOUL_SOIL)));
     public static final Block SOUL_FUNGUS = registerBlock("soul_fungus",
             properties -> new NetherFungusBlock(TreeFeatures.OAK, Blocks.SOUL_SOIL, RFTags.Blocks.SUPPORTS_SOUL_FUNGUS,
-                    properties.mapColor(MapColor.COLOR_LIGHT_BLUE).instabreak().noCollision().sound(SoundType.FUNGUS).pushReaction(PushReaction.DESTROY).lightLevel(state->7)));
+                    properties.mapColor(MapColor.COLOR_LIGHT_BLUE).instabreak().noCollision().sound(SoundType.FUNGUS).pushReaction(PushReaction.DESTROY).lightLevel(_ ->7)));
     public static final Block POTTED_SOUL_FUNGUS = registerBlockNoItem("potted_soul_fungus",
             properties -> new FlowerPotBlock(SOUL_FUNGUS,properties));
+    public static final Block SOUL_WART_BLOCK = registerBlock("soul_wart_block",
+            properties -> new Block(properties.strength(1f).lightLevel(_->7).sound(SoundType.WART_BLOCK).mapColor(MapColor.COLOR_LIGHT_BLUE)));
+
+
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function){
         Block toRegister = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.

@@ -17,6 +17,7 @@ public class RFCreativeModeTab {
                     .displayItems((parameters, output) -> {
                         output.accept(RFBlocks.SOUL_ROOTS);
                         output.accept(RFBlocks.SOUL_FUNGUS);
+                        output.accept(RFBlocks.SOUL_WART_BLOCK);
                     })
                     .build());
 

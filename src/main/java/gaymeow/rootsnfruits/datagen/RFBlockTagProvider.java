@@ -19,6 +19,9 @@ public class RFBlockTagProvider extends FabricTagsProvider.BlockTagsProvider {
         valueLookupBuilder(BlockTags.MINEABLE_WITH_SHOVEL)
                 .add(RFBlocks.SOUL_ROOTS);
 
+        valueLookupBuilder(BlockTags.MINEABLE_WITH_HOE)
+                .add(RFBlocks.SOUL_WART_BLOCK);
+
         valueLookupBuilder(BlockTags.SOUL_FIRE_BASE_BLOCKS)
                 .add(RFBlocks.SOUL_ROOTS);
 
@@ -39,5 +42,8 @@ public class RFBlockTagProvider extends FabricTagsProvider.BlockTagsProvider {
 
         valueLookupBuilder(BlockTags.FLOWER_POTS)
                 .add(RFBlocks.POTTED_SOUL_FUNGUS);
+
+        valueLookupBuilder(BlockTags.WART_BLOCKS)
+                .add(RFBlocks.SOUL_WART_BLOCK);
     }
 }
